@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "stackADT.h"
+
+#define STACK_SIZE 100
+
+struct stack_type {
+  int contents[STACK_SIZE];
+  int top;
+}

@@ -1,0 +1,5 @@
+
+char
+digit_to_hex_char(int digit)
+{
+}

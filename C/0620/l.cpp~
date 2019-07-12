@@ -1,0 +1,10 @@
+高精度乘法1(高精度乘单精度数，单精度数是指通常的整型数)
+int multi1(int a[],long  key){ //a=a*key,key是单精度数
+  int i,k;
+  if (key==0){memset(a,0,sizeof(a));a[0]=1;return 0;} //单独处理key=0
+  for(i=1;i<=a[0];i++)a[i]=a[i]*key;//先每位乘起来
+  for(i=1;i<=a[0];i++){a[i+1]+=a[i]/10;a[i]%=10;} //进位
+  //注意上一语句退出时i=a[0]+1
+  while(a[i]>0) {a[i+1]=a[i]/10;a[i]=a[i]%10;i++;a[0]++];}  //继续处理超过原a[0]位数的进位,修正a的位数
+  return 0;
+}

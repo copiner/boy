@@ -1,0 +1,6 @@
+
+void
+no_change(const int *p)
+{
+  *p = 0; /*** WRONG ***/
+}
