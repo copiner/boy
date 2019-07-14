@@ -1,0 +1,22 @@
+
+/*Sorts an array of integers using Quicksort algorithm*/
+
+#include <stdio.h>
+
+#define N 10
+
+void
+quick(int a[], int low, int high);
+
+int
+split(int a[], int low, int high);
+
+int main(void)
+{
+  int a[N], i;
+
+  printf("Enter %d numbers to be sorted: ", N);
+  for (i = 0; i < N; i++){
+    scanf("%d". &a[i]);
+  }
+}

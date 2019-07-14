@@ -1,0 +1,5 @@
+/*Tests whether a number is prime*/
+
+#include <stdbool.h>
+#include <stdlib.h>
+

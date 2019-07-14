@@ -188,3 +188,5 @@ int a[NUM_ROWS][NUM_COLS], (*p)[NUM_COLS], i;
 for (p = &a[0]; p < &a[NUM_ROWS]; p++)
     (*p)[i] = 0;
 ```
+这里把p声明为指向长度为NUM_COLS的整型数组的指针。
+...
